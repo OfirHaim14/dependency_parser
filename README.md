@@ -8,7 +8,7 @@ Every sentence contain words and part of speech. First, all the sentences get em
 Then, for all the pair of words from the sentence we pass their output from the LSTM to a multi perceptron unit to get the weight of the edge beetween the first word to the second. The MLP unit return the weights in a n*n matrix which is given as input to Chu-Liu-Edmonds algorithem implementation that gives the MST that is translated to the dependecy.
 # Model Architecture
 Our model is has five parts:
-The word embedding: Implemnted Word2Vec model that was train on the train data words. The vector embedding size is 200.
+## The word embedding: Implemnted Word2Vec model that was train on the train data words. The vector embedding size is 200.
 The pos embedding: Implemnted Word2Vec model that was train on the train data pos. The vector embedding size is 40.
 LSTM: Bidirectional LSTM with 2 layers. The input size is the size of the word and pos embedding togther which is 240. The hidden size is 300 and the output is 2*300=600 because the output is given for two words.
 MLP: Implementation of the structure that was given in the article – MLP = w2*tanh(w1*x+b1)+b2, with simple neural network with two layers and bias. To get the score matrix we changed the output from the network to n on n matrix when so it could be given as a input to the chu liu Edmonds algorithm. In addition, to prevent overfitting the model have dropout layer between the first layer to the second after the tanh was activated.
