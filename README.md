@@ -21,7 +21,7 @@ Implementation of the algo from the internet.
 
 # Parameters:
 Batch Size: the size the network gives is one but the loss calculates after every 15 sentences so the actual batch size is 15.  
-Epochs – From trying different values after 25 there aren’t better results than for the first 25 and it’s just take more time to train.
-Loss Functions – NLL loss
-Optimizer – Adamax optimizer.
+Epochs – From trying different values after 25 there aren’t better results than for the first 25 and it’s just take more time to train.  
+Loss Functions – NLL loss  
+Optimizer – Adamax optimizer.  
 Drop out –Value that is too big run over too many neurons and value that is too small didn’t prevent the over fit so the best value after trying a lot of values the best results are between 0.25 and 0.35 the best is 0.3. 
