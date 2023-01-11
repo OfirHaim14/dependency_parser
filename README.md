@@ -20,7 +20,7 @@ Implementation of the structure that was given in the article – MLP = w2*tanh(
 Implementation of the algo from the internet.
 
 # Parameters:
-Batch Size: the size the network gives is one but the loss calculates after every 15 sentences so the actual batch size is 15. 
+Batch Size: the size the network gives is one but the loss calculates after every 15 sentences so the actual batch size is 15.  
 Epochs – From trying different values after 25 there aren’t better results than for the first 25 and it’s just take more time to train.
 Loss Functions – NLL loss
 Optimizer – Adamax optimizer.
