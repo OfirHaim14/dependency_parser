@@ -25,3 +25,4 @@ Loss Functions – NLL loss
 Optimizer – Adamax optimizer.  
 Drop out –A dropout value that is too big ran over too many neurons and a value that is too small didn’t prevent the overfit so the after trying a lot of values the best results are between 0.25 and 0.35 the best is 0.3. 
 ![Uas on the train data](https://user-images.githubusercontent.com/118376368/212489020-b5909348-236e-466e-b6a7-0b9b56e0fcc2.png)
+![Loss on the train data](https://user-images.githubusercontent.com/118376368/212489203-2834dbc4-d842-4db1-bc85-1ccfc7185675.png)
